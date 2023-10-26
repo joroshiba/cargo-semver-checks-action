@@ -36,6 +36,9 @@ inputs:
   prefix-key:
     description: 'Additional prefix of the cache key, can be set to start a new cache manually.'
     required: false
+  baseline-rev:
+    description: 'Git revision to lookup for a baseline'
+    required: false
   github-token:
     description: 'The `GITHUB_TOKEN` secret used to download precompiled binaries from GitHub API. If not specified, the automatic GitHub token provided to the workflow will be used.'
     required: false

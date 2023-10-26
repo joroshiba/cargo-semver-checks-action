@@ -24,6 +24,7 @@ function getCheckReleaseArguments(): string[] {
         optionIfValueProvided("--release-type", rustCore.input.getInput("release-type")),
         getFeatureGroup(rustCore.input.getInput("feature-group")),
         optionFromList("--features", rustCore.input.getInputList("features")),
+        optionIfValueProvided("--baseline-rev", rustCore.input.getInput("baseline-rev")),
         rustCore.input.getInputBool("verbose") ? ["--verbose"] : [],
     ].flat();
 }
